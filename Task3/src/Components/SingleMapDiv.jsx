@@ -12,8 +12,7 @@ export const SingleMapDiv = ({ id, companyName, skill, rating, experience, salar
       <Link to={`/search/${skill}/${id}`}>
          <div className={styled.box} key={id}>
                  <h2 className={styled.companyName}>{companyName}</h2>
-             {/* <Link to={`/search/${skill}/${id}`} push >
-           </Link> */}
+            
              <div className={styled.ratingDiv}>
                  <h5 className={styled.skill} >{skill}</h5>
                  <div className={styled.ratingDivTwo}>
@@ -38,7 +37,7 @@ export const SingleMapDiv = ({ id, companyName, skill, rating, experience, salar
                  <div className={styled.flex}>
                      <div>
                         < BsFillGeoAltFill style={{marginTop:"42%"}}/>
-                         {/* <img className={styled.img} src="https://image.flaticon.com/icons/png/128/484/484167.png" alt="" /> */}
+                        
                      </div>
                  <div className={styled.subs}>{location}</div>
                  </div>
@@ -59,22 +58,10 @@ export const SingleMapDiv = ({ id, companyName, skill, rating, experience, salar
                     </div>
                  </div>
                  <div className={styled.flex} >
-                     {/* <div>{el.techStack[0]}</div> */}
-                     {/* {  (el.techStack.map(e=> (<div>{e}</div>)))} */}
-                     {/* {el.techStack.map(e => (<div style={{ marginTop: "-10px" }}>{e.techStack} <ul><li> {e.techStack} </li></ul></div>))} */}
-                     {/* {el.techStack.forEach(element =>  (<div>{element}hi</div>)
-                               
-        //                    )} */}
+                     
                  </div>
 
-                {/* <div className={styled.flex} style={{ marginLeft: "61%" }}>
-                     <div>
-                         {isSave ? <img className={styled.img} alt="logo" src="https://img.icons8.com/material-sharp/24/000000/star.png" /> : <img className={styled.img} src="https://img.icons8.com/metro/50/000000/star.png" alt="logo" />}
-                     </div>
-                     <div onClick={handleSaveAndCount} className={styled.subs}>
-                         {isSave ? 'Saved' : 'Save'}
-                    </div>
-                 </div> */}
+                
              </div>
          </div>
          </Link>

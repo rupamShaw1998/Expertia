@@ -18,11 +18,8 @@ export const SearchResult = () => {
 
   return (
     <>
-   
 
            <MapResults />
-           
-     
        
     </>
   );

@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
- import styled from "../Styles/LandingPage.module.css"
 import { Link } from "react-router-dom"
 import { Icon } from '@chakra-ui/react'
-import { MdSettings } from 'react-icons/md'
 import  {FcRating} from "react-icons/Fc"
-import {  Box, Button, Heading, Input,Text } from "@chakra-ui/react";
+import {  Box,Text } from "@chakra-ui/react";
 export const Jobs = ({ id, companyName, skill, rating, experience, salary, location, description, date }) => {
 
 

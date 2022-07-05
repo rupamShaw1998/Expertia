@@ -57,8 +57,9 @@ export const LandingPage = () => {
           </button>
         </Box>
         <Box className={styles.profileBox}>
-          <Box display={"flex"} margin={"auto"} marginTop={"2%"}>
+          <Box display={"flex"} margin={"auto"} marginTop={"2%"} >
             <img
+              style={{borderRadius: "7px  7px 0 0"}}
               src="https://www.nme.com/wp-content/uploads/2021/09/lee-min-ho-gettyimage-585329996@2000x1270.jpg"
               alt="logo"
             />
@@ -66,13 +67,13 @@ export const LandingPage = () => {
           
           <Box w={"80%"} h={"50px"} margin={"auto"} display={"flex"}>
             <Box className={styles.appearences}>
-              <h3 style={{ color: "blue" }}>1</h3>
+              <h3 style={{ color: "blue" }}>10</h3>
               <p style={{ color: "blue", fontSize: "10px" }}>
                 Search Appearances
               </p>
             </Box>
             <Box className={styles.appearences}>
-              <h3 style={{ color: "blue" }}>1</h3>
+              <h3 style={{ color: "blue" }}>8</h3>
               <p style={{ color: "blue", fontSize: "10px" }}>
                 Recruiter Actions
               </p>

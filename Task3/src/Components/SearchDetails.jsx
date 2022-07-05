@@ -44,20 +44,6 @@ export const SearchDetails = () => {
 
   return (
     <>
-     
-      <div className={styles.background}>
-        <p
-          style={{
-            color: "grey",
-            position: "relative",
-            marginLeft: 80,
-            padding: 20,
-          }}
-        >
-          <Link to="/home">Home</Link>
-          {`>${details.location}`}
-        </p>
-      </div>
       <Box display={"flex"} w={"100%"}>
         <Box w={"60%"} marginBottom={"2%"}>
           <div style={{ display: "flex" }}>
@@ -119,8 +105,11 @@ export const SearchDetails = () => {
             </ModalBody>
   
             <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={()=>navigate('/')}>
-                Save
+              <Button colorScheme='blue' mr={3} onClick={()=>{
+                alert("✔️ Successfully Applied")
+                navigate('/')
+                }}>
+                Submit
               </Button>
               <Button onClick={onClose}>Cancel</Button>
             </ModalFooter>
@@ -146,8 +135,8 @@ export const SearchDetails = () => {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: 26 }} className={styles.container5}>
-            <h3>Job description</h3>
+          <div style={{ marginTop: 26, textAlign: "left" }} className={styles.container5}>
+            <h3 style={{ fontWeight: "bold" }}>Job description</h3>
             <h4 style={{ marginTop: 8 }}>Roles and Responsibilities</h4>
             <ul
               style={{
@@ -188,7 +177,7 @@ export const SearchDetails = () => {
               </li>
             </ul>
            
-            <h4 style={{ marginTop: 20 }}>Key Skills</h4>
+            <h4 style={{ marginTop: 20, fontWeight: "bold" }}>Key Skills</h4>
             <div className={styles.skills}>
               {details.techStack?.map((item) => {
                 return (
